@@ -12,10 +12,10 @@ function App() {
   return (
     <>
       <div>
-        <Navbar />
+        <Home />
       </div>
       <div>
-        <Home />
+        <Contact />
       </div>
     </>
   )
