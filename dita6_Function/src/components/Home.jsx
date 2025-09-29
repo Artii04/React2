@@ -9,6 +9,12 @@ function Home() {
     {id: 4, name:"Arbnor", age:28, city:"Prizren"},
     {id: 5, name:"Arlind", age:27, city:"Prizren"},
   ])
+
+  const deleteButton = (id) =>{
+    const newList = list.filter(list => list.id !== id);
+    setList(newList);
+  }
+
   return (
     <>
         {/* {list.map((item) => (
@@ -18,7 +24,7 @@ function Home() {
             <p>City: {item.city}</p>
           </div>
         ))} */}
-        <BlogList  list={list} x ="Lista e Nxenesve" />
+        <BlogList  list={list} x ="Lista e Nxenesve" deleteButton={deleteButton}/>
     </>
   )
 }
