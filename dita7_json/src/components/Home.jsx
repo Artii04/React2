@@ -3,17 +3,19 @@ import BlogList from './BlogList'
 import ViewList from './ViewList'
 
 function Home() {
-  const [list, setList] = useState([
-    {id: 1, name:"Amr", age:25, city:"Prizren"},
-    {id: 2, name:"Arianit", age:31, city:"Prizren"},
-    {id: 3, name:"Ardian", age:29, city:"Prizren"},
-    {id: 4, name:"Arbnor", age:28, city:"Prizren"},
-    {id: 5, name:"Arlind", age:27, city:"Prizren"},
-  ])
+  const [list, setList] = useState([])
 
   useEffect(() => {
-    console.log("Components loaded");
-    console.log(list);
+    fetch('http://localhost:3000/list')
+    .then(res => {
+      return res.json()
+    })
+    .then(data => {
+      setList(data)
+    })
+    .catch(err => {
+      setList(err.message);
+    })
   }, []);
 
   const deleteButton = (id) =>{
@@ -30,7 +32,7 @@ function Home() {
             <p>City: {item.city}</p>
           </div>
         ))} */}
-        <BlogList  list={list} x ="Lista e Nxenesve" deleteButton={deleteButton}/>
+        <BlogList  list={list} x ="Lista e Nxenesve" deleteButton={deleteButton} />
     </>
   )
 }
