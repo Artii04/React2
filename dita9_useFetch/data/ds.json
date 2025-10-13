@@ -1,0 +1,10 @@
+{
+    "list":
+    [
+        {"id": 1, "name":"Amr", "age":25, "city":"Prizren"},
+        {"id": 2, "name":"Arianit", "age":31, "city":"Prizren"},
+        {"id": 3, "name":"Ardian", "age":29, "city":"Prizren"},
+        {"id": 4, "name":"Arbnor", "age":28, "city":"Prizren"},
+        {"id": 5, "name":"Arlind", "age":27, "city":"Prizren"}
+    ]
+}
