@@ -20,7 +20,6 @@ li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 0;
 }
 .navbar .logo{
     font-size: 24px;

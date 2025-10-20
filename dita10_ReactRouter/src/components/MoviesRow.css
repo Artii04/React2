@@ -1,0 +1,23 @@
+.movies-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.movie-card {
+  flex: 1;
+  margin: 0 10px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+.movie-card h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.movie-card p {
+  font-size: 1rem;
+  color: #333;
+}
