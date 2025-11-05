@@ -31,7 +31,7 @@ function Home() {
   return (
     <>
 
-      { loading && <div><img src="https://st5.depositphotos.com/1001248/64982/v/600/depositphotos_649827430-stock-video-loading-circle-video-loading-animation.jpg"/></div> }
+      { loading && <h1>...</h1> }
 
       { error && <div>{ error }</div>}
 
